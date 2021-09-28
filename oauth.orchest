@@ -1,0 +1,82 @@
+{
+    "name": "OAuth pipeline",
+    "parameters": {},
+    "services": {
+        "flask-oauth": {
+            "binds": {
+                "/data": "/data",
+                "/project-dir": "/project-dir"
+            },
+            "command": "-c \"cd /project-dir && flask run --host=0.0.0.0\"",
+            "entrypoint": "bash",
+            "env_variables": {
+                "FLASK_APP": "oauth-server",
+                "FLASK_RUN_PORT": "80"
+            },
+            "env_variables_inherit": [
+                "QB_CLIENT_ID",
+                "QB_CLIENT_SECRET",
+                "QB_CLIENT_ENVIRONMENT",
+                "HOST"
+            ],
+            "image": "environment@3bf2a547-5add-4140-9e88-a95aa3837882",
+            "name": "flask-oauth",
+            "ports": [
+                80
+            ],
+            "requires_authentication": false,
+            "scope": [
+                "interactive",
+                "noninteractive"
+            ]
+        }
+    },
+    "settings": {
+        "auto_eviction": false,
+        "data_passing_memory_size": "1GB"
+    },
+    "steps": {
+        "3947d44e-748a-477d-820f-6ab7a6348439": {
+            "environment": "1ec3ad5d-acd9-423b-b3e3-f574113e31a1",
+            "file_path": "update-refresh-token.ipynb",
+            "incoming_connections": [
+                "7155da48-d008-425b-a629-221264ea847b"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    368,
+                    247.5
+                ]
+            },
+            "parameters": {},
+            "title": "Refresher",
+            "uuid": "3947d44e-748a-477d-820f-6ab7a6348439"
+        },
+        "7155da48-d008-425b-a629-221264ea847b": {
+            "environment": "1ec3ad5d-acd9-423b-b3e3-f574113e31a1",
+            "file_path": "initial-auth.ipynb",
+            "incoming_connections": [],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    112.5,
+                    247.5
+                ]
+            },
+            "parameters": {},
+            "title": "Request Authentication URL",
+            "uuid": "7155da48-d008-425b-a629-221264ea847b"
+        }
+    },
+    "uuid": "0d9bf7f0-470a-4c45-b447-88159876eff6",
+    "version": "1.0.0"
+}

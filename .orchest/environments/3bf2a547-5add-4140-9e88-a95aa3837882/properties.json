@@ -1,0 +1,1 @@
+{"gpu_support": false, "uuid": "3bf2a547-5add-4140-9e88-a95aa3837882", "base_image": "python:3.7", "language": "python", "name": "Flask server"}

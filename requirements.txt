@@ -1,0 +1,4 @@
+sqlitedict
+intuit-oauth
+requests
+flask
