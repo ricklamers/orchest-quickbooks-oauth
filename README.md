@@ -21,7 +21,8 @@ Environment variables that need to be set (at the project level):
 `QB_CLIENT_ID` \
 `QB_CLIENT_SECRET`
 
-Optional environment variables: \
+Optional environment variables:
+
 `SQLITE_LOCATION` default `/data/quickbooks-oauth.sqlite`
 
 **OAuth pipeline**
