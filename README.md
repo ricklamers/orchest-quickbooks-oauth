@@ -21,8 +21,8 @@ Environment variables that need to be set (at the project level):
 `QB_CLIENT_ID` \
 `QB_CLIENT_SECRET`
 
-OAuth pipeline
+OAuth pipeline \
 ![OAuth pipeline](https://pviz.orchest.io/?pipeline=https://github.com/ricklamers/orchest-quickbooks-oauth/blob/master/oauth.orchest)
 
-Main pipeline (reading data)
+Main pipeline (reading data) \
 ![Main pipeline](https://pviz.orchest.io/?pipeline=https://github.com/ricklamers/orchest-quickbooks-oauth/blob/master/main.orchest)
