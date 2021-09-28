@@ -21,6 +21,9 @@ Environment variables that need to be set (at the project level):
 `QB_CLIENT_ID` \
 `QB_CLIENT_SECRET`
 
+Optional environment variables: \
+`SQLITE_LOCATION` default `/data/quickbooks-oauth.sqlite`
+
 **OAuth pipeline**
 
 ![OAuth pipeline](https://pviz.orchest.io/?pipeline=https://github.com/ricklamers/orchest-quickbooks-oauth/blob/master/oauth.orchest)
