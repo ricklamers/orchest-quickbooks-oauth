@@ -14,7 +14,7 @@ It makes most sense to run the `oauth.orchest` pipeline as a job. Although techn
 
 Note: it's important that only a single OAuth pipeline runs at a time (oauth.orchest). The auth flow does not support concurrently executing pipelines. This does _not_ affect "consumers" of the QuickBooks API. There _can_ be multiple auth_clients active at the same time (using the same access/refresh tokens).
 
-Environment variables that need to be set:
+Environment variables that need to be set (at the project level):
 
 `HOST` e.g. `optimistic-newton-174ed1128.orchestapp.io` \
 `QB_CLIENT_ENVIRONMENT` e.g. `sandbox` \
