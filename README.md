@@ -1,5 +1,7 @@
 ### OAuth QuickBooks example project
 
+[![Open in Orchest](https://github.com/orchest/orchest-examples/raw/main/imgs/open_in_orchest.svg)](https://cloud.orchest.io/?import_url=https://github.com/ricklamers/orchest-quickbooks-oauth/)
+
 This project demonstrates how to build a pipeline that integrates the OAuth 2.0 authentication flow for the QuickBooks API from Intuit.
 
 In its essence, it consists of the following steps:
